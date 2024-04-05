@@ -1,0 +1,44 @@
+# Algorithms
+
+## Image Resampling Algorithms
+
+Image resampling is the process of resizing an image by changing the number of pixels. **PhotoProX supports several resampling algorithms**, each with its own characteristics and quality ratings. Here's a quick overview of the most common resampling algorithms:
+
+| Algorithm          | Description                                                                            | Quality Rating |
+| ------------------ | -------------------------------------------------------------------------------------- | -------------- |
+| Lanczos4           | High-quality resampling method that uses Lanczos interpolation with a window size of 4 | Excellent      |
+| Mitchell Netravali | Advanced resampling method that provides good visual quality and sharpness             | Excellent      |
+| Bicubic            | High-quality resampling method that uses cubic interpolation                           | Excellent      |
+| Cubic Spline       | Smooth resampling method that uses cubic spline interpolation                          | Good           |
+| Bilinear           | Simple resampling method that uses linear interpolation                                | Fair           |
+| Area               | Basic resampling method that computes the average of neighboring pixels                | Poor           |
+
+# Models
+
+## Color Models
+
+Although **PhotoProX supports editing in RGB, CMYK, HSV, and HSL color models**, it's important to understand the differences between them and when to use each one. Here's a quick overview of the most common color models:
+
+| Color Model | Description                                                                             | When to Use                                       | Supported in PhotoProX |
+| ----------- | --------------------------------------------------------------------------------------- | ------------------------------------------------- | ---------------------- |
+| RGB         | Additive color model using red, green, and blue components                              | For digital displays and web design               | Yes                    |
+| CMYK        | Subtractive color model using cyan, magenta, yellow, and black components               | For print and graphic design                      | Yes                    |
+| HSL         | Hue, saturation, and lightness color model, often used for web design                   | Manipulating colors in CSS and web design         | Yes                    |
+| HSV (HSB)   | Hue, saturation, and value (or brightness) color model                                  | Color manipulation and selection in photo editing | Yes                    |
+| Lab         | CIE 1976 (L*, a*, b\*) color model, representing perceptual color differences           | Color correction and comparison in photo editing  | No                     |
+| XYZ         | CIE 1931 color space, used as a reference for other color spaces                        | Color science and color space conversions         | No                     |
+| YUV         | Color space used in video compression, separating luminance (Y) from chrominance (U, V) | Video processing and compression                  | No                     |
+
+## Background Remover Models
+
+Our background remover allows you to **remove the background from any image**. We use different well developed models to remove the background. Choosing a model can be a bit tricky, but here's a table to help you decide:
+
+| Model             | Intended Use Case                           |
+| ----------------- | ------------------------------------------- |
+| IsNet-anime       | Segmenting objects in anime images          |
+| IsNet-general-use | General-purpose instance-aware segmentation |
+| U2Net             | Segmenting objects from complex backgrounds |
+| U2NetP            | High-performance image segmentation         |
+| U2Net-human-seg   | Segmenting human silhouettes                |
+| U2Net-cloth-seg   | Segmenting clothing items                   |
+| Silhouette        | Segmenting human silhouettes from images    |

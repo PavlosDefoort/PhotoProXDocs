@@ -1,23 +1,49 @@
-# Nextra Docs Template 
+# PhotoProXDocs
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+PhotoProXDocs is a simple and easy to learn the ropes of PhotoProX.
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+The live version of the project can be found [here](https://photoproxdocs.vercel.app).
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+![Preview](./public/preview.png)
 
-## Quick Start
+## Installation
 
-Click the button to clone this repository and deploy it on Vercel:
+To install PhotoProXDocs, you can simply download the repository or clone it using the following command:
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+```bash
+git clone
+```
 
-## Local Development
+You'll also need to install npm and node.js to run the project. You can download them from [here](https://nodejs.org/en/download/).
 
-First, run `pnpm i` to install the dependencies.
+Once node is installed, you can run the following command to install the required dependencies:
 
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
+```bash
+npm install
+```
+
+## Usage
+
+To run the project, you can use the following command:
+
+```bash
+npm run dev
+```
+
+You should see the following message in the terminal:
+
+```bash
+Server started on http://localhost:3000
+```
+
+You can now open your browser and navigate to `http://localhost:3000` to view the project.
+
+Have fun!
+
+## Acknowledgements
+
+This project was built using a [Nextra](https://nextra.site/) template. You can find the original respotory [here](https://github.com/shuding/nextra-docs-template)
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

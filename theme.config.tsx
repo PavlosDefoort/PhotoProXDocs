@@ -4,12 +4,13 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 const config: DocsThemeConfig = {
   logo: <span>PhotoProX Docs</span>,
   project: {
-    link: "https://github.com/shuding/nextra-docs-template",
+    link: "https://github.com/PavlosDefoort/PhotoProXDocs",
   },
+
   chat: {
     link: "https://discord.com",
   },
-  docsRepositoryBase: "https://github.com/shuding/nextra-docs-template",
+  docsRepositoryBase: "https://github.com/PavlosDefoort/PhotoProXDocs",
   footer: {
     text: "Nextra Docs Template",
   },
